@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Calculator from './components/Calculator';
+import {Routes,Route} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Musicplayer from './components/musicplayer';
+import Digitalclok from './components/Digitalclock';
+import Weather from './components/Weather';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <br></br>
+      <Routes>
+        <Route path='/Calculator' element={<Calculator/>}/>
+        <Route path='/Musicplayer' element={<Musicplayer/>}/>
+        <Route path='/Digitalclock' element={<Digitalclok/>}/>
+        <Route path='/Weather' element={<Weather/>}/>
+      </Routes>
+    </>
   );
 }
 
