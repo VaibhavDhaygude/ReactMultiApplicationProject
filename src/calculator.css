@@ -1,9 +1,15 @@
 .button{
-  width: 250px;
-  margin-left: 40%;
+  display: flex;
+  /* margin-left: 40%;
   margin-right: 35%;
-  margin-top: 30px;
+  margin-top: 30px; */
+  justify-content: center;
+}
+.container{
+  width: 250px;
   background-color: rgb(158, 158, 158);
+  border-radius: 5px;
+  padding: 5px;
 }
 .buttons{
   text-align: center;

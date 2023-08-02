@@ -1,8 +1,13 @@
 .music{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 40%;
+    margin-right: 35%; */
+    
+}
+.container{
     width: 200px;
-    margin-left: 40%;
-    margin-right: 35%;
     background-color: rgb(158, 158, 158);
     border-radius: 20px;
 }

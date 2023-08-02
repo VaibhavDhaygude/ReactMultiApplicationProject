@@ -3,12 +3,14 @@ import './../Navbar.css'
 
 function Navbar(){
     return (
-        <ul className='ul'>
-            <nav><Link to={'/Calculator'}> Calculator</Link></nav>
-            <nav><Link to={'/Musicplayer'}>Musicplayer</Link></nav>
-            <nav><Link to={'/Digitalclock'}>Digitalclok</Link></nav>
-            <nav><Link to={'/Weather'}>Weather</Link></nav>
-        </ul>
+        <div className='ul'>
+            <div className='navbar'>
+                <nav><Link style={{textDecoration: 'none' , color:'aquamarine'}} to={'/Calculator'}> <b> Calculator </b></Link></nav>
+                <nav><Link style={{textDecoration: 'none' , color:'aquamarine'}} to={'/Musicplayer'}><b> Musicplayer </b></Link></nav>
+                <nav><Link style={{textDecoration: 'none' , color:'aquamarine'}} to={'/Digitalclock'}><b> Digitalclock </b></Link></nav>
+                <nav><Link style={{textDecoration: 'none' , color:'aquamarine'}} to={'/Weather'}><b> Weather </b></Link></nav>
+            </div>
+        </div>
     )
 }
 export default Navbar;

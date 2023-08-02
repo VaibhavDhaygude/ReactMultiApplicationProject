@@ -18,7 +18,8 @@ function Calculator(){
     setInput(input.slice(0,-1));
   }
   return(
-   <div className='button'>
+  <div className='button'>
+    <div className='container'>
       <label for='input'>Input</label><br/>
       <input type='text' id='input' value={input}/><br></br><hr></hr>
       <label for='result'>Result</label><br/>
@@ -45,9 +46,10 @@ function Calculator(){
       <button onClick={()=>setResult(eval(input))}>=</button>
       <button onClick={()=>handelInput('/')}>/</button>
       <button onClick={()=>backspace()}>{back}</button>
-      </div>
+    </div>
+    </div>
 
-   </div>
+  </div>
   );
 }
 export default Calculator;

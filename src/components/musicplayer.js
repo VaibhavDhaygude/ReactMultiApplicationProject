@@ -23,6 +23,7 @@ function Musicplayer(){
     }
     return(
         <div className='music'>
+            <div className='container'>
             <h1>Music Player</h1><hr></hr>
             <Songlist songs={songs} setCurrentsong={setCurrentsong} setIsplaying={setIsplaying}/><hr></hr>
             {currentsong && (
@@ -37,6 +38,7 @@ function Musicplayer(){
                     
                 </div>
             )}
+            </div>
         </div>
     );
 
